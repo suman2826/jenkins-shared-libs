@@ -9,6 +9,11 @@ def call() {
                    echo "suman"
                }
            }
+          stage("Checking") {
+              steps {
+                   echo "checking"
+               }
+           }
            
            
            stage("Running Testcase") {
