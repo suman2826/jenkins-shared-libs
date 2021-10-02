@@ -16,6 +16,7 @@
 //     }
 // }
 
-def call(String name="Suman")
+def call(String name="Suman") {
     echo "Welcome, ${name}"
+}
 
