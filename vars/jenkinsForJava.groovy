@@ -5,7 +5,7 @@ def call() {
        stages {
            stage("Tools initialization") {
                steps {
-                   
+                   sh 'echo "A one line step"'
                    echo "suman"
                }
            }
