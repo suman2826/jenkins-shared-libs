@@ -1,11 +1,11 @@
-def call() {
+def call(name="shonzen") {
   pipeline {
        agent any
       
        stages {
            stage("Tools initialization") {
                steps {
-                   echo "suman"
+                   echo "suman ${name}"
                }
            }
           stage("Checking") {
