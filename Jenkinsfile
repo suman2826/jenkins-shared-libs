@@ -1,4 +1,4 @@
-@library('jenkins-shared-library')
+@library('jenkins-shared-library') _
 pipeline{
     stage{
         welcomeJob 'hello'
