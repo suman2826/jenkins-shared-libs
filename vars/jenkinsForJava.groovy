@@ -13,6 +13,7 @@ def call() {
                   echo "${env.commitName}"
                  echo "${currentBuild.number}"
                   echo "${env.JENKINS_URL}"
+                 echo "${env.foo}"
                }
            }
           stage("Checking") {
