@@ -14,6 +14,8 @@ def call() {
                  echo "${currentBuild.number}"
                   echo "${env.JENKINS_URL}"
                  echo "${env.foo}"
+                 env.foo = "hello world"
+                 echo "${env.foo}"
                }
            }
           stage("Checking") {
