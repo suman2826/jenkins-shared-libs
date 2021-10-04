@@ -14,10 +14,11 @@ def call() {
                  echo "${currentBuild.number}"
                   echo "${env.JENKINS_URL}"
                  echo "${env.foo}"
-                 step {
-                 env.foo = "hello world"
-                 echo "${env.foo}"
+                 script {
+                 welcomeJob()
+//                  echo "${env.foo}"
                  }
+                 echo "${env.foo}"
                }
            }
           stage("Checking") {
