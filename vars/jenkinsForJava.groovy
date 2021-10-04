@@ -11,7 +11,8 @@ def call() {
                    echo "${env.GIT_PREVIOUS_COMMIT}"
                   echo "${env.commitEmail}"
                   echo "${env.commitName}"
-                 echo "${currentBuild}"
+                 echo "${currentBuild.number}"
+                  echo "${env.JENKINS_URL}"
                }
            }
           stage("Checking") {
