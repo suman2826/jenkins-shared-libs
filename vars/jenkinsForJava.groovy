@@ -14,7 +14,7 @@ def call() {
                  echo "${currentBuild.number}"
                   echo "${env.JENKINS_URL}"
                  echo "${env.foo}"
-                 steps{
+                 step {
                  env.foo = "hello world"
                  echo "${env.foo}"
                  }
