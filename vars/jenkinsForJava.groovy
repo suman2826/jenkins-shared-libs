@@ -6,6 +6,7 @@ def call() {
            stage("Tools initialization") {
                steps {
                    echo "Started"
+                 echo "${env.GIT_BRANCH}"
                }
            }
           stage("Checking") {
