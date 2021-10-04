@@ -7,6 +7,10 @@ def call() {
                steps {
                    echo "Started"
                  echo "${env.GIT_BRANCH}"
+                  echo "${env.GIT_COMMIT}"
+                   echo "${env.GIT_PREVIOUS_COMMIT}"
+                  echo "${env.commitEmail}"
+                  echo "${env.commitName}"
                }
            }
           stage("Checking") {
