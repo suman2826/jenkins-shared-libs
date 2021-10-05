@@ -1,5 +1,6 @@
 def call() {
+   echo "inside loadutility"
   def obj = load "utilities.groovy"
-  echo "inside loadutility"
+ 
   echo "${obj.firstJob()}"
 }
