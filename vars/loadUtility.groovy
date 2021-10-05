@@ -1,6 +1,6 @@
 def call() {
    echo "inside loadutility"
-    checkout scm
+//     checkout scm
    def rootDir = pwd()
    echo "${rootDir}"
    def obj = load "${rootDir}/utilities.groovy"
