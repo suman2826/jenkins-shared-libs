@@ -1,6 +1,17 @@
 def call() {
   pipeline {
-       agent any
+    agent any
+       options {
+        disableConcurrentBuilds()
+              skipDefaultCheckout()
+    }
+       parameters {
+              choice (
+                     name: "deploymentTrack",
+                     choices: ['cr','ar1','ar2', 'pr'],
+                     description: "choose tracl"
+                     )
+       }
       
        stages {
            stage("Tools initialization") {
