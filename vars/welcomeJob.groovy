@@ -21,5 +21,6 @@ def call(String name="Suman") {
     env.foo="hello"
     echo "${env.foo}"
     echo "Welcome, ${name}"
+    loadUtility()
 }
 
