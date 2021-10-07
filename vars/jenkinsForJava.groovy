@@ -6,7 +6,7 @@ def call() {
            stage("Tools initialization") {
                steps {
                    echo "Started"
-                 echo "${env.GIT_BRANCH}"
+                 echo "${env.BRANCH_NAME}"
                   echo "${env.GIT_COMMIT}"
                    echo "${env.GIT_PREVIOUS_COMMIT}"
                   echo "${env.commitEmail}"
