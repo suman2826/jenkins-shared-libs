@@ -1,32 +1,32 @@
-@Library('jenkins-shared-library')  _
+// @Library('jenkins-shared-library')  _
 // welcomeJob()
 
-// library identifier: 'jenkins-shared-library@main',
-//     retriever: modernSCM([
-//       $class: 'GitSCMSource',
-//       remote: 'https://github.com/suman2826/jenkins-shared-libs.git'
-// ])
-// jenkinsForJava()
+library identifier: 'jenkins-shared-libs@main',
+    retriever: modernSCM([
+      $class: 'GitSCMSource',
+      remote: 'https://github.com/suman2826/jenkins-shared-libs.git'
+])
+jenkinsForJava()
 
-pipeline {
-       agent any
+// pipeline {
+//        agent any
       
-       stages {
-           stage("Tools initialization") {
-               steps {
-                     echo "${env.foo}"
-                   echo "suman"
-//                      welcomeJob()
+//        stages {
+//            stage("Tools initialization") {
+//                steps {
 //                      echo "${env.foo}"
-               }
-           }
+//                    echo "suman"
+// //                      welcomeJob()
+// //                      echo "${env.foo}"
+//                }
+//            }
            
            
-           stage("Running Testcase") {
-              steps {
-                   echo "completed"
-               }
-           }
+//            stage("Running Testcase") {
+//               steps {
+//                    echo "completed"
+//                }
+//            }
            
-       }
-   }
+//        }
+//    }
