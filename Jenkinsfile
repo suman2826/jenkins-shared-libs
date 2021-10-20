@@ -1,7 +1,7 @@
 // @Library('jenkins-shared-library')  _
 // welcomeJob()
 
-library identifier: 'jenkins-shared-libs@v1.1',
+library identifier: 'shared-libs-jenkins@v1.5',
     retriever: modernSCM([
       $class: 'GitSCMSource',
       remote: 'https://github.com/suman2826/jenkins-shared-libs.git'
