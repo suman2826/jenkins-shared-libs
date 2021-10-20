@@ -38,6 +38,11 @@ def call() {
                    echo "completedsss"
                }
            }
+           stage("Running Testcasesssss") {
+              steps {
+                   echo "completedsssed"
+               }
+           }
            
        }
    }
