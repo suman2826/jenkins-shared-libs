@@ -28,7 +28,7 @@ def call() {
            }
           stage("Checking") {
               steps {
-                   echo "checking"
+                   echo "checkingsssss"
                }
            }
            
