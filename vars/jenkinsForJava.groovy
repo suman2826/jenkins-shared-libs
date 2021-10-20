@@ -18,13 +18,7 @@ def call() {
                steps {
                    echo "Started"
                  echo "${env.BRANCH_NAME}"
-                  echo "${env.GIT_COMMIT}"
-                   echo "${env.GIT_PREVIOUS_COMMIT}"
-                  echo "${env.commitEmail}"
-                  echo "${env.commitName}"
-                 echo "${currentBuild.number}"
-                  echo "${env.JENKINS_URL}"
-                 echo "${env.foo}"
+                  
                  script {
                  welcomeJob()
 //                  echo "${env.foo}"
@@ -41,7 +35,7 @@ def call() {
            
            stage("Running Testcase") {
               steps {
-                   echo "completed"
+                   echo "completedsss"
                }
            }
            
